@@ -1,7 +1,7 @@
 # mips-cpu
 A MIPS32 CPU developed in verilog
 
-##实现指令
+## 实现指令
 算术指令：ADD/ADDI/ADDIU/ADDU/CLO/CLZ/LUI/SUB/SUBU
 位移指令：SLL/SLLV/SRA/SRAV/SRL/SRLV
 逻辑指令：AND/ANDI/NOP/NOR/OR/ORI/XOR/XORI
@@ -12,5 +12,5 @@ A MIPS32 CPU developed in verilog
 访存指令：LB/LBU/LH/LHU/LW/LWL/LWR/SB/SH/SW/SWL/SWR
 原子操作指令：LL/SC
 
-##使用说明
+## 使用说明
 将指令文件存放在src目录，命名为rom.data，项目仿真时读取指令，存入ROM中并执行。
