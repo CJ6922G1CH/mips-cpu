@@ -1,2 +1,16 @@
 # mips-cpu
-A MIPS CPU developed in verilog
+A MIPS32 CPU developed in verilog
+
+##实现指令
+算术指令：ADD/ADDI/ADDIU/ADDU/CLO/CLZ/LUI/SUB/SUBU
+位移指令：SLL/SLLV/SRA/SRAV/SRL/SRLV
+逻辑指令：AND/ANDI/NOP/NOR/OR/ORI/XOR/XORI
+条件测试指令：MOVN/MOVZ/SLT/SLTI/SLTIU/SLTU
+乘除法指令：DIV/DIVU/MADD/MADDU/MSUB/MSUBU/MUL/MULT/MULTU
+累加器指令：MFHI/MFLO/MTHI/MTLO
+跳转和分支指令：B/BEQ/BGEZ/BGEZAL/BGTZ/BLEZ/BLTZ/BLTZAL/BNE/J/JAL/JALR/JR
+访存指令：LB/LBU/LH/LHU/LW/LWL/LWR/SB/SH/SW/SWL/SWR
+原子操作指令：LL/SC
+
+##使用说明
+将指令文件存放在src目录，命名为rom.data，项目仿真时读取指令，存入ROM中并执行。
